@@ -1,0 +1,1 @@
+A basic app to explore i18n using Tolgee and Format.js
