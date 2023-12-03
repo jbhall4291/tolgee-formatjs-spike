@@ -1,44 +1,36 @@
-import { useTranslate, useTolgee } from "@tolgee/react"
-import './App.css'
-import { LanguageSelect } from "./LanguageSelect";
-import pickles from "../src/assets/pickles.png"
-import { IntlProvider, FormattedNumber, FormattedPlural, FormattedDate } from 'react-intl'
+import { LanguageSelect } from "./components/LanguageSelect";
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar";
+import { Routes, Route } from 'react-router-dom';
 
+// navbar links
+import Home from "./pages/Home";
+import About from './pages/About'
+import Contact from './pages/Contact'
+import ServicesCitizenship from "./pages/ServicesCitizenship";
+import ServicesResidences from "./pages/ServicesResidences";
+
+// import { useTranslate, useTolgee } from "@tolgee/react"
+// import { IntlProvider, FormattedNumber, FormattedPlural, FormattedDate } from 'react-intl'
 
 function App() {
 
-  const { t } = useTranslate();
-  const tolgee = useTolgee(['language']);
-
-  const jarsInStock = 12000
-
-  console.log(tolgee.getLanguage())
+  // const tolgee = useTolgee(['language']);
+  // console.log(tolgee.getLanguage())
 
   return (
     <>
-
-      <IntlProvider locale={tolgee.getLanguage()} >
-        <h1>{t("welcome_message")}</h1>
-        <h2>{t("sub_message")}</h2>
-        <div className="container">
-          <img src={pickles} width="300" />
-          <div>
-            <p>One Jar: <FormattedNumber value={15.99} style="currency" currency="GBP" /></p>
-            <p>Delivery: <FormattedNumber value={1.49} style="currency" currency="GBP" /></p>
-            <p>Currently in stock: <FormattedNumber value={jarsInStock} /> <FormattedPlural value={jarsInStock} other="jars" one="jar" /></p>
-            <p>Order by 6pm for delivery by: <FormattedDate
-              value={new Date(1693193600011)}
-              year="numeric"
-              month="long"
-              day="2-digit"
-            /></p>
-            <button>BUY NOW!</button>
-          </div>
-        </div>
-        <div style={{ marginTop: '150px' }}>
-          <LanguageSelect />
-        </div>
-      </IntlProvider>
+      <LanguageSelect />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/services/citizenship" element={<ServicesCitizenship />} />
+        <Route path="/services/residences" element={<ServicesResidences />} />
+      </Routes>
+      <Home />
+      <Footer />
     </>
   )
 }
