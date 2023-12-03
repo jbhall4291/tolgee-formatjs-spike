@@ -1,5 +1,4 @@
 {
-  "sub_message" : "plutôt bien, non?",
-  "welcome_message" : "Bienvenue sur ma page d'accueil!",
-  "footer_copyright" : "Copyright © 2023 1111visas.com - IN ITALIAN!."
+  "home_welcome-message" : "Welcome to 1111 Visas.",
+  "home_welcome-submessage" : "Experts in immigration solutions."
 }

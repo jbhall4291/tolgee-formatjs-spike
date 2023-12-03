@@ -1,5 +1,4 @@
 {
-  "sub_message" : "bastante bien, ¿verdad?",
-  "welcome_message" : "¡Bienvenido a mi página de inicio!",
-  "footer_copyright" : "Copyright © 2023 1111visas.com - Todos los derechos reservados."
+  "home_welcome-message" : "¡Bienvenido a 1111 visas!",
+  "home_welcome-submessage" : "Expertos en soluciones migratorias"
 }

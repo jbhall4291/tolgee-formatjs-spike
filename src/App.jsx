@@ -11,17 +11,17 @@ import Services from './pages/Services'
 import ServicesCitizenship from "./pages/ServicesCitizenship";
 import ServicesResidences from "./pages/ServicesResidences";
 
-// import { useTranslate, useTolgee } from "@tolgee/react"
+ import { useTranslate, useTolgee } from "@tolgee/react"
 // import { IntlProvider, FormattedNumber, FormattedPlural, FormattedDate } from 'react-intl'
 
 function App() {
 
-  // const tolgee = useTolgee(['language']);
-  // console.log(tolgee.getLanguage())
+   const tolgee = useTolgee(['language']);
+   console.log(tolgee.getLanguage())
 
   return (
     <>
-      {/* <LanguageSelect /> */}
+      
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

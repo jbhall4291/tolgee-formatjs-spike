@@ -6,8 +6,11 @@ function Footer() {
 
     return (
         <footer className="bg-black text-white py-12 flex flex-row justify-between px-8">
-            <p>{t("footer_copyright")}</p>
-            <p>{t("footer_copyright")}</p>
+            
+            <div>
+            Copyright © 2023 1111visas.com - Todos los derechos reservados.
+
+            </div>
         </footer>
     )
 }
