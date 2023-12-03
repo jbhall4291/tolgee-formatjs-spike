@@ -1,7 +1,7 @@
 function About() {
 
     return (
-        <main className="py-24">
+        <main className="py-24 bg-[#fff3e0]">
             <h1>Discover what makes us unique</h1>
             <p>
             Experience an Exciting Life in Spain

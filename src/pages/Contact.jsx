@@ -1,7 +1,7 @@
 function Contact() {
 
     return (
-        <main className="py-24">
+        <main className="py-24 bg-[#fff3e0]">
             <h1>Contact Us</h1>
             <p>
                 Contact Us

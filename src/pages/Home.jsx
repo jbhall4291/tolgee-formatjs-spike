@@ -3,7 +3,7 @@ import { useTolgee } from '@tolgee/react';
 function Home() {
     const tolgee = useTolgee(['language']);
     return (
-        <main  className="py-24">
+        <main  className="py-24 bg-[#fff3e0]">
             <h1>hello from home / ¡Bienvenido a 1111 visas ! {tolgee.getLanguage()}</h1>
             <h2>Tu Camino a España, Nuestra Experiencia en Migración</h2>
             <p>we want a looping video for a background</p>
