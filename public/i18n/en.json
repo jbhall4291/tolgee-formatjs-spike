@@ -1,7 +1,7 @@
 {
   "home_welcome-message" : "Welcome to 1111 Visas.",
   "home_welcome-submessage" : "Experts in immigration solutions.",
-  "services_card1-title" : "hello from card 1 ",
-  "services_card1-description" : "this is card 1 description"
+  "service_1_title" : "hello from card 1 ",
+  "service_2_title" : "this is card 1 description"
   
 }
